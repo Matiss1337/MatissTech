@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="h-[100vh] font-font-robot bg-secondary">
     <nav class="h-[60px] bg-primary z-50 sticky top-0">
@@ -13,14 +12,15 @@
             <div class="text-secondary font-semibold text-[28px]">MatissTech</div>
 
             <div class="flex gap-5">
-                <div class="links flex gap-1">
+                <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary lg:hidden">Hamburger</button>
+                <div class="links hidden gap-1 lg:flex">
                     <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">About</button>
                     <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">Projects</button>
                     <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">Contact</button>
                     <a class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">CV</a>
                 </div>
 
-                <div class="theme-toggle text-secondary px-[10px] py-[2px] rounded-norma hover:text-accent hover:bg-secondary">toggle</div>
+                <button id="theme-toggle" class="text-secondary px-[10px] py-[2px] rounded-norma hover:text-accent hover:bg-secondary">toggle</button>
             </div>
         </div>
     </nav>
@@ -93,5 +93,7 @@
     <footer class="h-[120px] bg-primary flex justify-center items-center">
         <p>Designed & built by Matiss Judins 2024</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

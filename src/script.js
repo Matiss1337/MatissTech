@@ -1,5 +1,7 @@
-import Alpine from 'alpinejs'
-window.Alpine = Alpine
-Alpine.start()
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggleBtn = document.getElementById("theme-toggle");
 
-console.log("madafaka");
+    themeToggleBtn.addEventListener("click", function() {
+        document.body.classList.toggle("dark-theme");
+    });
+});

@@ -11,3 +11,9 @@
 span {
     @apply text-accent;
 }
+
+body {
+    &.dark-theme {
+        @apply bg-accent;
+    }
+}
