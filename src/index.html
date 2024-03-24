@@ -7,28 +7,28 @@
     <link href="./output.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="h-[100vh]">
-    <nav class="h-[60px] bg-primary">
-        <div class="max-w-[1280px] m-auto flex justify-between px-4">
-            <div class="logo">MatissTech</div>
+<body class="h-[100vh] font-font-robot bg-secondary">
+    <nav class="h-[60px] bg-primary z-50 sticky top-0">
+        <div class="max-w-[1280px] m-auto flex items-center justify-between px-4 py-[9px]">
+            <div class="text-secondary font-semibold text-[28px]">MatissTech</div>
 
             <div class="flex gap-5">
-                <div class="links flex">
-                    <a class="bg-white" href="">About</a>
-                    <a class="bg-white" href="">Projects</a>
-                    <a class="bg-white" href="">Contact</a>
-                    <a class="bg-white" href="">CV</a>
+                <div class="links flex gap-1">
+                    <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">About</button>
+                    <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">Projects</button>
+                    <button class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">Contact</button>
+                    <a class="text-secondary px-[10px] py-[2px] rounded-normal hover:text-accent hover:bg-secondary" href="">CV</a>
                 </div>
 
-                <div class="theme-toggle bg-white">toggle</div>
+                <div class="theme-toggle text-secondary px-[10px] py-[2px] rounded-norma hover:text-accent hover:bg-secondary">toggle</div>
             </div>
         </div>
     </nav>
 
     <main class="flex relative">
-        <div class="left-side w-15 text-primary absolute left-0">left side stuff</div>
+        <div class="left-side w-15 text-primary absolute left-0 transform rotate-90 block bottom-[200px]">left side stuff</div>
 
-        <div class="sections max-w-[1280px] m-auto px-4">
+        <div class="sections max-w-[1280px] w-full m-auto px-4">
             <div class="about flex flex-col gap-2">
                 <span>Hi, My name is</span>
                 <span>Matiss Judins.</span>
@@ -82,7 +82,12 @@
                 </form>
             </div>
         </div> 
-        <div class="right-side w-15 text-primary absolute right-0">right side stuff</div>
+
+        
+        <div class="right-side w-15 text-primary absolute right-0 transform rotate-90 block bottom-[200px]">
+            <span class="">Matissj1337@gmail.com
+            </span>
+        </div>
     </main>
 
     <footer class="h-[120px] bg-primary flex justify-center items-center">
