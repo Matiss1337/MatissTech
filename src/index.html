@@ -7,8 +7,86 @@
     <link href="./output.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="flex justify-center items-center h-[100vh]">
-    <span class="bg-green-500 p-[24px] rounded-full">Portfolio</span>
-    <span>playing with stuff</span>
+<body class="h-[100vh]">
+    <nav class="h-[60px] bg-primary">
+        <div class="max-w-[1280px] m-auto flex justify-between px-4">
+            <div class="logo">MatissTech</div>
+
+            <div class="flex gap-5">
+                <div class="links flex">
+                    <a class="bg-white" href="">About</a>
+                    <a class="bg-white" href="">Projects</a>
+                    <a class="bg-white" href="">Contact</a>
+                    <a class="bg-white" href="">CV</a>
+                </div>
+
+                <div class="theme-toggle bg-white">toggle</div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex relative">
+        <div class="left-side w-15 text-primary absolute left-0">left side stuff</div>
+
+        <div class="sections max-w-[1280px] m-auto px-4">
+            <div class="about flex flex-col gap-2">
+                <span>Hi, My name is</span>
+                <span>Matiss Judins.</span>
+                <span>Front end developer.</span>
+                <span>I love building beautiful, functionally Excellent Websites.</span>
+            </div>
+
+            <div class="pojects">
+                <div class="project flex lg:flex-col">
+                    <div>
+                        <span>Title</span>
+                        <span>Implemented Figma designs in a React application with pixel-perfect precision, ensuring a high level of visual accuracy.</span>
+                        <ul>
+                            <li>React</li>
+                            <li>Typescript</li>
+                            <li>Figma to React</li>
+                            <li>Responsive design</li>
+                            <li>Pixel perfect</li>
+                        </ul>
+                        <a href="">link to project</a>
+                    </div>
+
+                    <div class="bg-primary w-20 h-20 p-4">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <span>Contact Me</span>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="number" class="block text-gray-700 text-sm font-bold mb-2">Number</label>
+                        <input type="tel" id="number" name="number" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="Your Phone Number">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" class="form-textarea w-full px-4 py-3 rounded-lg focus:outline-none focus:shadow-outline" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <div class="right-side w-15 text-primary absolute right-0">right side stuff</div>
+    </main>
+
+    <footer class="h-[120px] bg-primary flex justify-center items-center">
+        <p>Designed & built by Matiss Judins 2024</p>
+    </footer>
 </body>
 </html>
